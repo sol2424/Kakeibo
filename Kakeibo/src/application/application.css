@@ -1,0 +1,13 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.chart-bar.bar-color-1 { -fx-bar-fill: #4CAF50; }  /* 緑 */
+.chart-bar.bar-color-2 { -fx-bar-fill: #2196F3; }  /* 青 */
+.chart-bar.bar-color-3 { -fx-bar-fill: #FF9800; }  /* オレンジ */
+.chart-bar.bar-color-4 { -fx-bar-fill: #9C27B0; }  /* 紫 */
+.chart-bar.bar-color-5 { -fx-bar-fill: #F44336; }  /* 赤 */
+.chart-bar.bar-color-6 { -fx-bar-fill: #00BCD4; }  /* シアン */
+.root {
+    -fx-background-image: url("background.png");  /* ファイル名を実際の画像名に */
+	-fx-background-size: cover;                   /* 画面にフィットさせる */
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center center;       /* 位置指定も推奨 */
+}
