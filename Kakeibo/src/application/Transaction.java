@@ -24,7 +24,7 @@ public class Transaction {
         this.memo = new SimpleStringProperty(memo);
     }
 
-    // getter（画面で表示したい項目に必要）
+    // getter
     public String getType() {
     	return type.get(); 
     	}
