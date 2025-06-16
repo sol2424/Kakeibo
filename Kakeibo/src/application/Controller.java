@@ -78,12 +78,12 @@ public class Controller  {
         expenseRadio.setToggleGroup(group);
         expenseRadio.setSelected(true);
 
-        // ── フィルター用データ準備 ──
+        // フィルター用データ準備
         filteredData = new FilteredList<>(masterData, p -> true);
         transactionTable.setItems(masterData);
         transactionTable2.setItems(filteredData);
 
-        // ── コンボボックス初期化と連動 ──
+        // コンボボックス初期化と連動
         updateYearMonthComboBoxes();
         yearComboBox.setOnAction(e -> updateFilter());
         monthComboBox.setOnAction(e -> updateFilter());
