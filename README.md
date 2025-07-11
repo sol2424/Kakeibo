@@ -29,7 +29,7 @@ Java Silver SE17の学習成果をアピールすること、
 - グラフ表示機能  
 - 右クリックでのリスト項目の削除機能  
 - CSSを利用し背景画像を追加  
-   画像はこちらからお借りしました。https://sozaino.site/archives/6411#google_vignette 
+  - [使用画像：OKUMONO様より かわいい雲の柄背景](https://sozaino.site/archives/6411#google_vignette) 
    
 # 3.学習記録  
 ・・・  
