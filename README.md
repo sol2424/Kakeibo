@@ -10,11 +10,15 @@ Java Silver SE17の学習成果をアピールすること、
 ## 使用技術    
 - Java SE17  
 - javafx-sdk-17.0.15  
-- JavaFX Scene Builder 23.0.1
+- JavaFX Scene Builder
+
+
+
+ 23.0.1
 
 ## デモ動画
 
-（URL）  
+https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
 ## 利用方法
 
