@@ -17,7 +17,7 @@ Java Silver SE17の学習成果をアピールすること、
 https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
 ## 利用方法  
-(工事中)
+(工事中。ビルドまでやっておく？)
   
 # 2.機能一覧(追加順）  
 
@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
   - 使用画像：OKUMONO様より かわいい雲の柄背景　https://sozaino.site/archives/6411#google_vignette 
    
 # 3.学習記録  
-(工事中)
+(工事中。ラムダ式、例外処理、モジュールの使い方について書く予定）
 
 - テストについて
 
@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
    Eclipseのエラー表示を手がかりに、エラーの原因を調査したり、ChatGPTなどのツールも活用することで、  
    問題の解決に取り組みました。  
 
-- 現時点での問題点  
+- 現時点での問題点  (ここ必要？)
    -  間違えて項目を削除してしまった場合に元に戻す方法がない  
    - csvで1つのデータしか保存できない。複数管理できるようにするべき？  
    - 保存し忘れで終了するのを防ぐようにした方がいい  
