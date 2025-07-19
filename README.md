@@ -30,7 +30,9 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 - CSSを利用し背景画像を追加  
   - 使用画像：OKUMONO様より かわいい雲の柄背景　https://sozaino.site/archives/6411#google_vignette 
    
-# 3.学習記録  
+# 3.学習記録　　
+
+本アプリの制作において学びを得た内容について記述していく　　
 (工事中。ラムダ式、例外処理、モジュールの使い方について書く予定）
 
 - テストについて
