@@ -17,7 +17,7 @@ Java Silver SE17の学習成果をアピールすること、
 https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
 ## 利用方法  
-(工事中。ビルドまでやっておく？)
+(工事中。できればリリースしたものをここに上げるまでやっておきたいところ)
   
 # 2.機能一覧(追加順）  
 
@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 - 右クリックでのリスト項目の削除機能  
 - CSSを利用し背景画像を追加  
   - 使用画像：OKUMONO様より かわいい雲の柄背景　https://sozaino.site/archives/6411#google_vignette
-    <br>
+<br>
 <br>  
 
  - 本アプリの動作テストについて
@@ -38,7 +38,12 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
    問題の解決に取り組みました。  
 
 
+# 3.工夫したこと  
 
+- String型「type」の実装
+  入力の際ここで"収入"あるいは"支出"の情報を与え識別できるようにする。
+ 例えばリストに反映される際に収入の場合青文字、支出の場合赤文字で表示される。
+ フィルター機能においてもこれで判別する仕組みにしている。   
 
 # 4.今後の課題及び追加予定機能 
 
