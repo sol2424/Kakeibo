@@ -17,7 +17,15 @@ Java Silver SE17の学習成果をアピールすること、
 https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
 ## 利用方法  
-(工事中。できればリリースしたものをここに上げるまでやっておきたいところ)
+1.家計簿アプリ.zipをダウンロード  
+
+2.Gluon公式サイト(https://gluonhq.com/products/javafx/) よりJavaFX SDK17のバージョンをダウンロード  
+
+3.ダウンロードしたフォルダ内のlibフォルダとbinフォルダを家計簿アプリの  
+  javafx-sdkフォルダ内へコピーしてください。  
+
+4.以上の作業が完了しましたら家計簿アプリ.exeをクリックして起動してください。  
+
   
 # 2.機能一覧(追加順）  
 
