@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
   
 # 2.機能一覧(追加順）  
 
-- 支出の入力（項目・金額・日付）と支出リストの表示   
+- 収入・支出の入力（項目・金額・日付）とリストの表示   
 - csvによるデータ保存/読み込み機能  
 - フィルター機能を用いた合計表示機能  
 - グラフ表示機能  
@@ -48,10 +48,62 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
 # 3.工夫したこと  
 
-- String型「type」の実装
-  入力の際ここで"収入"あるいは"支出"の情報を与え識別できるようにする。
- 例えばリストに反映される際に収入の場合青文字、支出の場合赤文字で表示される。
- フィルター機能においてもこれで判別する仕組みにしている。   
+- String型「type」を用いて「収入」、「支出」を識別する仕組みにしました。  
+  ラジオボタンで「収入」または「支出」を選択し、その情報を登録できるようになっています。  
+  これにより、収入と支出を符号で区別する必要がなく、入力のわかりやすさを重視しました。
+```java:Controller
+    @FXML
+    private void handleAddButton(ActionEvent event) {
+        String category = categoryField.getText();
+        String amountText = amountField.getText();
+        LocalDate date = datePicker.getValue();
+        String memo = memoField.getText();
+        String type = incomeRadio.isSelected() ? "収入" : "支出";
+```  
+- 表示面では、リストに反映される際に「収入」は青文字、「支出」は赤文字で表示することで、可読性を高めています。  
+  
+```java:Controller
+        amountColumn.setCellFactory(col -> new TableCell<>() {    //収入は青文字、支出は赤文字で表示する
+            @Override
+            protected void updateItem(Integer item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                    setStyle("");
+                    return;
+                }
+                setText(item.toString());
+                Transaction tx = getTableView().getItems().get(getIndex());
+                setStyle("収入".equals(tx.getType())
+                    ? "-fx-text-fill: blue;"
+                    : "-fx-text-fill: red;");
+            }
+```
+ 
+- フィルター機能においても、typeの情報を参照して収入・支出を判別し、表示を切り替える仕組みにしています。   
+ ```java:Controller
+    private void updateFilter() {
+        Integer selectedYear = yearComboBox.getValue();
+        Integer selectedMonth = monthComboBox.getValue();
+        boolean showIncome = incomeCheckBox.isSelected();
+        boolean showExpense = expenseCheckBox.isSelected();
+
+        filteredData.setPredicate(transaction -> {
+            if (transaction == null) return false;
+
+            // 年月フィルター
+            LocalDate date = transaction.getDate();
+            if (selectedYear != null && date.getYear() != selectedYear) return false;
+            if (selectedMonth != null && date.getMonthValue() != selectedMonth) return false;
+
+            // 支出・収入フィルター
+            String type = transaction.getType();
+            if (type.equals("収入") && !showIncome) return false;
+            if (type.equals("支出") && !showExpense) return false;
+            return true;
+        });
+```
+また、将来的には予算設定の機能を追加する際に「支出」で取得した数値をマイナスで返す処理を実装するために利用する予定となっています。  
 
 # 4.今後の課題及び追加予定機能 
 
@@ -95,5 +147,5 @@ Swiftの学習と、上記の機能実装が完了した段階で着手する予
 # おわりに
 
 実際にアプリ開発を行ったことで、日常的に利用しているアプリがいかに高度に作り込まれているかを実感しました。  
-今回の開発では「正常に動作するアプリの完成」を目標に取り組みましたが、今後はさらに知識を深め、  
-品質向上・セキュリティ対策・拡張性の確保といった観点にも意識を向けて開発を進めていきたいと考えています。
+今回の開発では「正常にアプリが動作すること」を目標に取り組みましたが、今後はさらに知識を深め、  
+品質・セキュリティ面などの観点にも意識を向けて開発を進めていきたいと考えています。
