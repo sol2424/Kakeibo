@@ -131,7 +131,7 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 <details><summary>保存形式のデータベース化（SQLite等）</summary>  
 
 - 現在のCSV保存からデータベース管理へ移行し、データの整合性・拡張性を向上させる  
-（優先度は低めだが、データベースの学習を兼ねて検討中）。    　
+（優先度は低めだが、データベースやバックエンドの学習を兼ねて検討中）。    　
 
 </details>  
 
