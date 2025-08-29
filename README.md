@@ -107,7 +107,6 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
 # 4.今後の課題及び追加予定機能 
 
-本アプリケーションは現在も開発を継続しており、以下の機能追加・改善を予定しています。
 
 <details><summary>固定費の自動反映機能</summary>  
 
