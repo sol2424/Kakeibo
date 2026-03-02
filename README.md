@@ -172,17 +172,11 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
 </details>  
 
-<details><summary>保存形式のデータベース化（SQLite等）</summary>  
 
-- 現在のCSV保存からデータベース管理へ移行し、データの整合性・拡張性を向上させる  
-（優先度は低めだが、データベースやバックエンドの学習を兼ねて検討中）。    　
 
-</details>  
+<details><summary>webアプリとして再設計</summary>  
 
-<details><summary>iOSアプリとしての再設計と開発</summary>  
-
-- 最終的な目標として、Swiftを用いて本アプリと同様の機能を持つiPhone対応アプリを開発予定。  
-Swiftの学習と、上記の機能実装が完了した段階で着手する予定。 　
+- Spring Boot + REST API構成でWebアプリ化することを目標にバックエンド開発を学習中。
 
 </details>  
 
