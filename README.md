@@ -6,32 +6,61 @@ Java Silver SE17の学習成果をアピールすること、
 そして自分自身の日常的な家計管理に役立てることを目的として、  
 デスクトップ上で動作するGUI形式の家計簿アプリを開発しました。  
 <br>
-<br>  
+<br>
 2026.2.21 家計簿アプリを実際に触れるように外部公開しました  
 
 https://sol2424.com/
 
-（Ubuntu環境に構築し、Lightsail上でnoVNCを使用。独自ドメインを取得し、HTTPS化まで対応。）
+（Ubuntu環境に構築し、Lightsail上でnoVNCを使用。独自ドメインを取得し、HTTPS化まで対応。）　
 
-## 使用技術    
-- Java SE17  
-- javafx-sdk-17.0.15  
-- JavaFX Scene Builder 23.0.1
+なお、利用の際は事前に送付したパスワードが必要です。
+<br>
+<br>
+
+## 使用技術   
+***言語***
+- Java SE17
+
+***フレームワーク / UI***
+- JavaFX-sdk-17.0.15
+- Scene Builder 23.0.1
+
+***データベース***
+- SQLite
+- JDBC
+
+***ビルド / 環境***
+- Maven
+- Ubuntu (AWS Lightsail)
+
+***インフラ***
+- AWS Lightsail
+
+<br>
+<br>
 
 ## デモ動画
 
 https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 
+<br>
+<br>
+
 ## 利用方法  
-1.家計簿アプリ.zipをダウンロード  
+1.https://sol2424.com/ へアクセス 
 
-2.Gluon様公式サイト(https://gluonhq.com/products/javafx/) よりJavaFX SDK17のバージョンをダウンロード  
+2.ベーシック認証画面にてIDに「ID」を入力
 
-3.ダウンロードしたフォルダ内のlibフォルダとbinフォルダを家計簿アプリの  
-  javafx-sdkフォルダ内へコピーしてください。  
+3.noVNCのコネクト画面にて「パスワード１」を入力
 
-4.以上の作業が完了しましたら家計簿アプリ.exeをクリックして起動してください。  
+4.ubuntuのロック解除画面にて「パスワード２」を入力
 
+<br>
+
+※OpenJFX（JavaFX）とVNC環境の仕様上の制限により、Ubuntu上（noVNC接続）では日本語入力ができません。ご了承ください。
+
+<br>
+<br>
   
 # 2.機能一覧(追加順）  
 
@@ -42,6 +71,7 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 - 右クリックでのリスト項目の削除機能  
 - CSSを利用し背景画像を追加  
   - 使用画像：OKUMONO様より かわいい雲の柄背景　https://sozaino.site/archives/6411#google_vignette
+  
 <br>
 <br>  
 
@@ -51,6 +81,8 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
    Eclipseのエラー表示を手がかりに、エラーの原因を調査したり、ChatGPTなどのツールも活用することで、  
    問題の解決に取り組みました。  
 
+<br>
+<br>
 
 # 3.工夫したこと  
 
@@ -109,7 +141,10 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
             return true;
         });
 ```
-また、将来的には予算設定の機能を追加する際に「支出」で取得した数値をマイナスで返す処理を実装するために利用する予定となっています。  
+また、将来的には予算設定の機能を追加する際に「支出」で取得した数値をマイナスで返す処理を実装するために利用することを予定しています。
+
+<br>
+<br>
 
 # 4.今後の課題及び追加予定機能 
 
