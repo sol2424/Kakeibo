@@ -29,13 +29,15 @@ https://sol2424.com/
 - SQLite
 - JDBC
 
-***ビルド / 環境***
+***開発環境/ツール***
+- Eclipse
 - Maven
-- Ubuntu (AWS Lightsail)
+
 
 ***インフラ***
 - AWS Lightsail
-
+- Ubuntu
+- systemd
 <br>
 <br>
 
@@ -71,6 +73,8 @@ https://github.com/user-attachments/assets/a1aabdec-323e-481d-8f3b-20a928b04f0a
 - 右クリックでのリスト項目の削除機能  
 - CSSを利用し背景画像を追加  
   - 使用画像：OKUMONO様より かわいい雲の柄背景　https://sozaino.site/archives/6411#google_vignette
+
+- csv管理からSQLiteへ移行したことによりデータの整合性や拡張性を強化
   
 <br>
 <br>  
